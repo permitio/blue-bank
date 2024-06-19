@@ -95,7 +95,7 @@ export default function Home() {
 			marginTop={"60px"}
 		>
 			<Text fontSize="xl" color="#00aeef" mb={4}>
-				Blue Bank
+				Purple Bank
 			</Text>
 			<TopNavigation onTabChange={handleTabChange} tabValue={tabValue} />
 			<VStack
