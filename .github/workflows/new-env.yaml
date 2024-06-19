@@ -61,8 +61,8 @@ jobs:
           -H 'Content-Type: application/json')
 
         # Extract and echo the ID of the "production" environment
-        PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "production") | .id')
-        echo "PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "production") | .id')" >> $GITHUB_ENV
+        PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "impersonation-demo") | .id')
+        echo "PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "impersonation-demo") | .id')" >> $GITHUB_ENV
 
         # Print the Production env ID
         echo "Production env ID is: $PROD_ID"

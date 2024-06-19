@@ -38,11 +38,11 @@ jobs:
           -H 'Authorization: Bearer ${{ secrets.PROJECT_API_KEY }}' \
           -H 'Content-Type: application/json')
 
-        # Extract and echo the ID of the "production" environment
-        PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "production") | .id')
-        echo "PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "production") | .id')" >> $GITHUB_ENV
+        # Extract and echo the ID of the "impersonation-demo" environment
+        PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "impersonation-demo") | .id')
+        echo "PROD_ID=$(echo "$response" | jq -r '.[] | select(.key == "impersonation-demo") | .id')" >> $GITHUB_ENV
 
-        # Print the production env ID
+        # Print the impersonation-demo env ID
         echo "Production env ID is: $PROD_ID"
 
     - name: Copy from 'pr-${{ steps.extract_branch.outputs.branch }}' to Production
