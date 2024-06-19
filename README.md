@@ -1,6 +1,6 @@
 # Blue Bank
 
-Blue Bank is a simple mobile plan management application that demonstrates the basic principles of fine-grained authorization using Permit.io.
+Blue Bank is a simple bank account plan management application that demonstrates the basic principles of fine-grained authorization using Permit.io.
 
 Blue Bank utilizes the RBAC, ReBAC, and ABAC models. It uses impersonation of three different user personas: Customer, Representative, and Manager, to demonstrate how each user gets only the proper permissions.
 
