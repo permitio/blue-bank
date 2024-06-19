@@ -5,7 +5,7 @@ on:
     types: [closed]
 
 env:
-  PROJECT_ID: 538e459351a847058fe28f1e6679b87b #Demo project id (under 'Permit.io Tests' workspace), project Demo
+  PROJECT_ID: 46798370fd6c4a358198100c7df7fb21 #Demo project id (under 'Permit.io Tests' workspace), project Demo
 
 jobs:
   demo-merging:
