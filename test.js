@@ -125,7 +125,7 @@ const users = async () => {
 
 (async () => {
   try {
-    // await users();
+    await users();
     console.log("Mock users created");
   } catch(e) {}
   const allowed = await permit.check(
