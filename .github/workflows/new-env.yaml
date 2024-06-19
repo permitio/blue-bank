@@ -10,7 +10,7 @@ env:
 
 jobs:
   demo-new-env:
-    if: contains( github.event.pull_request.labels.*.name, 'permissions')
+    if: contains( github.event.pull_request.labels.*.name, 'Permissions')
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
